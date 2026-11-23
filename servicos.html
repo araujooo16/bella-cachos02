@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Serviços | Bella Cachos</title>
+    <meta name="description" content="Corte, coloração, definição e tratamentos para cabelos crespos e cacheados na Bella Cachos.">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginas.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <img src="img/logo-bella-cachos.png" alt="Bella Cachos — Cor e Corte">
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="menu" id="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="quem-somos.html">Quem somos</a>
+                <a href="servicos.html" class="ativo" aria-current="page">Serviços</a>
+                <a href="resultados.html">Resultados</a>
+                <!-- PRODUTOS OCULTO por enquanto. Para voltar a exibir, remova os marcadores de comentário: <a href="produtos.html">Produtos</a> -->
+                <a href="cursos.html">Cursos</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <span class="eyebrow">Bella Cachos · Serviços</span>
+                <h1>Tudo começa com entender o seu cabelo.</h1>
+                <p>Do corte à coloração, cada atendimento é pensado de forma individual, respeitando a curvatura, a textura e a personalidade dos seus fios.</p>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="cabecalho">
+                    <span class="section-label">Como funciona</span>
+                    <h2 class="titulo">Do primeiro olhar <em>ao resultado.</em></h2>
+                    <p class="lead">Nenhum cabelo é igual ao outro, por isso o atendimento segue o ritmo do seu.</p>
+                </div>
+                <div class="passos">
+                    <div class="passo">
+                        <span class="passo-numero">1</span>
+                        <h3>Conversa e avaliação</h3>
+                        <p>Entendemos a sua rotina, o histórico do seu cabelo e o que você espera do resultado.</p>
+                    </div>
+                    <div class="passo">
+                        <span class="passo-numero">2</span>
+                        <h3>Técnica sob medida</h3>
+                        <p>Escolhemos o corte, a cor ou o tratamento que fazem sentido para a sua curvatura.</p>
+                    </div>
+                    <div class="passo">
+                        <span class="passo-numero">3</span>
+                        <h3>Finalização e orientação</h3>
+                        <p>Você sai com os cachos definidos e sabendo como manter o resultado em casa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cabecalho">
+                    <span class="section-label">O que fazemos</span>
+                    <h2 class="titulo">Cuide. Transforme. <em>Valorize.</em></h2>
+                </div>
+                <article class="servico servico-destaque" id="corte">
+                    <h3>Corte <span class="servico-selo">Nossa especialidade</span></h3>
+                    <div>
+                        <p>Cortes pensados para respeitar a curvatura, o formato e a personalidade do seu cabelo.</p>
+                        <p>Antes de cortar, olhamos como o seu cacho se comporta, porque o corte certo valoriza o movimento natural dos fios.</p>
+                        <p>Você sai com um formato que combina com a sua curvatura e com orientação para manter o resultado no dia a dia.</p>
+                    </div>
+                    <a href="contato.html?servico=Corte" class="button">Agendar corte</a>
+                </article>
+                <article class="servico" id="coloracao">
+                    <h3>Coloração</h3>
+                    <div>
+                        <p>Cor, iluminação e transformação sem abrir mão da saúde e da beleza dos seus cachos.</p>
+                        <p>Do caramelo ao loiro, do vermelho ao preto: a cor é escolhida para combinar com você e com a sua textura.</p>
+                    </div>
+                    <a href="contato.html?servico=Coloração" class="button button-outline">Agendar</a>
+                </article>
+                <article class="servico" id="definicao">
+                    <h3>Definição</h3>
+                    <div>
+                        <p>Técnicas para revelar a definição, o movimento e a textura natural dos seus fios.</p>
+                        <p>O objetivo é um cacho definido, leve e fácil de manter no dia a dia.</p>
+                    </div>
+                    <a href="contato.html?servico=Definição" class="button button-outline">Agendar</a>
+                </article>
+                <article class="servico" id="tratamentos">
+                    <h3>Tratamentos</h3>
+                    <div>
+                        <p>Cuidados personalizados para devolver força, saúde, brilho e vida aos seus cabelos.</p>
+                        <p>Cada tratamento é indicado depois de entender do que o seu cabelo precisa naquele momento.</p>
+                    </div>
+                    <a href="contato.html?servico=Tratamentos" class="button button-outline">Agendar</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="final-cta section-alt">
+            <div class="final-cta-content">
+                <span class="section-label">Seu próximo resultado começa aqui</span>
+                <h2>Vamos escolher o melhor para o seu cabelo?</h2>
+                <p>Chame a gente para tirar dúvidas, saber valores e escolher o seu horário.</p>
+                <a href="contato.html" class="final-button">Agendar meu horário <span>→</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Bella <span>Cachos</span></h3>
+                <p>Beleza, cuidado e autoestima para os seus cachos.</p>
+            </div>
+            <div class="footer-info">
+                <div class="footer-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                    <span>ENDEREÇO</span>
+                    <p>Rua Bálsamo, 34 – Menezes<br>Justinópolis, Ribeirão das Neves – MG</p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="footer-icon"><i class="fa-regular fa-clock"></i></div>
+                <div>
+                    <span>ATENDIMENTO</span>
+                    <p>Terça a sábado<br>Horários mediante agendamento</p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="https://instagram.com/" data-instagram aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/" data-whatsapp aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bella Cachos · Todos os direitos reservados</p>
+            <p>Desenvolvido por <strong>Camilly Araújo</strong></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/" data-whatsapp class="whatsapp-float" aria-label="Falar com a Bella Cachos pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>

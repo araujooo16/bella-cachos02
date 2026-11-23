@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Cursos | Bella Cachos</title>
+    <meta name="description" content="Cursos da Bella Cachos para quem quer trabalhar com curvaturas ou cuidar melhor dos próprios cachos.">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginas.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <img src="img/logo-bella-cachos.png" alt="Bella Cachos — Cor e Corte">
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="menu" id="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="quem-somos.html">Quem somos</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="resultados.html">Resultados</a>
+                <!-- PRODUTOS OCULTO por enquanto. Para voltar a exibir, remova os marcadores de comentário: <a href="produtos.html">Produtos</a> -->
+                <a href="cursos.html" class="ativo" aria-current="page">Cursos</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <span class="eyebrow">Bella Cachos · Cursos</span>
+                <h1>Conhecimento para transformar técnica em resultado.</h1>
+                <p>Aprenda técnicas e conhecimentos para cuidar e trabalhar com curvaturas.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cursos">
+                    <article class="curso">
+                        <span class="section-label">Para profissionais</span>
+                        <h3>Trabalhar com curvaturas</h3>
+                        <p>Aprenda a identificar cada curvatura e a aplicar corte, cor e finalização com mais segurança no seu trabalho.</p>
+                        <a href="#inscricao" class="text-link">Quero me inscrever <span>→</span></a>
+                    </article>
+                    <article class="curso curso-escuro">
+                        <span class="section-label">Para você</span>
+                        <h3>Cuidar dos seus cachos</h3>
+                        <p>Aprenda a cuidar do seu cabelo no dia a dia, da lavagem à finalização, respeitando a sua textura.</p>
+                        <a href="#inscricao" class="text-link">Quero me inscrever <span>→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="inscricao">
+            <div class="container dividido">
+                <div>
+                    <span class="section-label">Inscrição</span>
+                    <h2 class="titulo">Garanta o seu <em>lugar.</em></h2>
+                    <p class="lead">A inscrição é aberta para qualquer pessoa: não é preciso ser cliente. Preencha o formulário e conversamos pelo WhatsApp sobre datas, valores e vagas.</p>
+                </div>
+                <form class="form" data-form-whatsapp data-titulo="Olá! Quero me inscrever em um curso da Bella Cachos.">
+                    <div class="campo">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required>
+                    </div>
+                    <div class="form-linha">
+                        <div class="campo">
+                            <label for="telefone">WhatsApp</label>
+                            <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(31) 99999-9999" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail (opcional)</label>
+                            <input type="email" id="email" name="email" autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="curso">Curso de interesse</label>
+                        <select id="curso" name="curso" required>
+                            <option value="">Selecione</option>
+                            <option>Trabalhar com curvaturas (para profissionais)</option>
+                            <option>Cuidar dos meus cachos (para mim)</option>
+                            <option>Quero saber dos próximos cursos</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem (opcional)</label>
+                        <textarea id="mensagem" name="mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="button">Enviar inscrição <span>→</span></button>
+                    <p class="form-nota">Ao enviar, o WhatsApp abre com os seus dados já preenchidos. É só confirmar o envio da mensagem.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Bella <span>Cachos</span></h3>
+                <p>Beleza, cuidado e autoestima para os seus cachos.</p>
+            </div>
+            <div class="footer-info">
+                <div class="footer-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                    <span>ENDEREÇO</span>
+                    <p>Rua Bálsamo, 34 – Menezes<br>Justinópolis, Ribeirão das Neves – MG</p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="footer-icon"><i class="fa-regular fa-clock"></i></div>
+                <div>
+                    <span>ATENDIMENTO</span>
+                    <p>Terça a sábado<br>Horários mediante agendamento</p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="https://instagram.com/" data-instagram aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/" data-whatsapp aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bella Cachos · Todos os direitos reservados</p>
+            <p>Desenvolvido por <strong>Camilly Araújo</strong></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/" data-whatsapp class="whatsapp-float" aria-label="Falar com a Bella Cachos pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Contato e agendamento | Bella Cachos</title>
+    <meta name="description" content="Solicite seu horário na Bella Cachos, em Justinópolis (Ribeirão das Neves – MG).">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginas.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <img src="img/logo-bella-cachos.png" alt="Bella Cachos — Cor e Corte">
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="menu" id="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="quem-somos.html">Quem somos</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="resultados.html">Resultados</a>
+                <!-- PRODUTOS OCULTO por enquanto. Para voltar a exibir, remova os marcadores de comentário: <a href="produtos.html">Produtos</a> -->
+                <a href="cursos.html">Cursos</a>
+                <a href="contato.html" class="ativo" aria-current="page">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <span class="eyebrow">Bella Cachos · Contato</span>
+                <h1>Vamos conversar sobre o seu próximo resultado.</h1>
+                <p>Escolha o serviço e o melhor dia para você. Respondemos pelo WhatsApp.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container dividido">
+                <div>
+                    <span class="section-label">Agendamento</span>
+                    <h2 class="titulo">Escolha o seu <em>horário.</em></h2>
+                    <p class="lead">Preencha o formulário de pedido ou fale direto com a gente. O horário só fica reservado depois da confirmação.</p>
+                    <ul class="contato-lista">
+                        <li>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <div><strong>Endereço</strong><span>Rua Bálsamo, 34 – Menezes<br>Justinópolis, Ribeirão das Neves – MG</span></div>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                            <div><strong>Atendimento</strong><span>Terça a sábado<br>Horários mediante agendamento</span></div>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            <div><strong>WhatsApp</strong><a href="https://wa.me/" data-whatsapp>Chamar no WhatsApp</a></div>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <div><strong>Instagram</strong><a href="https://instagram.com/" data-instagram data-instagram-texto>Ver no Instagram</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <form class="form" data-form-whatsapp data-titulo="Olá! Gostaria de solicitar um horário na Bella Cachos.">
+                    <div class="campo">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">WhatsApp</label>
+                        <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(31) 99999-9999" required>
+                    </div>
+                    <div class="campo">
+                        <label for="servico">Serviço</label>
+                        <select id="servico" name="servico" required>
+                            <option value="">Selecione</option>
+                            <option>Corte</option>
+                            <option>Coloração</option>
+                            <option>Definição</option>
+                            <option>Tratamentos</option>
+                            <option>Ainda não sei, quero uma avaliação</option>
+                        </select>
+                    </div>
+                    <div class="form-linha">
+                        <div class="campo">
+                            <label for="dia">Dia preferido</label>
+                            <select id="dia" name="dia" required>
+                                <option value="">Selecione</option>
+                                <option>Terça-feira</option>
+                                <option>Quarta-feira</option>
+                                <option>Quinta-feira</option>
+                                <option>Sexta-feira</option>
+                                <option>Sábado</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="periodo">Período</label>
+                            <select id="periodo" name="periodo" required>
+                                <option value="">Selecione</option>
+                                <option>Manhã</option>
+                                <option>Tarde</option>
+                                <option>Tanto faz</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="observacao">Observações (opcional)</label>
+                        <textarea id="observacao" name="observacao" placeholder="Conte um pouco sobre o seu cabelo ou o que você imagina."></textarea>
+                    </div>
+                    <button type="submit" class="button">Solicitar horário <span>→</span></button>
+                    <p class="form-nota">Ao enviar, o WhatsApp abre com o seu pedido já preenchido. É só confirmar o envio da mensagem.</p>
+                </form>
+            </div>
+            <div class="container mapa">
+                <iframe title="Mapa: Rua Bálsamo, 34 – Menezes" loading="lazy"
+                 src="https://www.google.com/maps?q=Rua+B%C3%A1lsamo%2C+34%2C+Menezes%2C+Ribeir%C3%A3o+das+Neves%2C+MG&amp;output=embed"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Bella <span>Cachos</span></h3>
+                <p>Beleza, cuidado e autoestima para os seus cachos.</p>
+            </div>
+            <div class="footer-info">
+                <div class="footer-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                    <span>ENDEREÇO</span>
+                    <p>Rua Bálsamo, 34 – Menezes<br>Justinópolis, Ribeirão das Neves – MG</p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="footer-icon"><i class="fa-regular fa-clock"></i></div>
+                <div>
+                    <span>ATENDIMENTO</span>
+                    <p>Terça a sábado<br>Horários mediante agendamento</p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="https://instagram.com/" data-instagram aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/" data-whatsapp aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bella Cachos · Todos os direitos reservados</p>
+            <p>Desenvolvido por <strong>Camilly Araújo</strong></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/" data-whatsapp class="whatsapp-float" aria-label="Falar com a Bella Cachos pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>

@@ -1,0 +1,309 @@
+/* =========================================
+   BELLA CACHOS
+   QUEM-SOMOS.CSS — só o que é exclusivo desta página
+   (header, rodapé, botões e hero vêm de style.css e paginas.css)
+   ========================================= */
+
+:root {
+    --creme: var(--bg);
+    --verde: var(--accent);
+    --marrom: var(--terracota);
+    --marrom-claro: #C58461;
+    --texto: var(--ink);
+    --texto-suave: var(--muted);
+    --borda: var(--line);
+    --branco: #fff;
+    --max-width: 1080px;
+    --verde-suave: #AFC5AD;
+}
+
+.history-content .button,
+.izabella-content .button,
+.about-cta .button { margin-top: 18px; }
+
+/* ==================================================
+   HISTÓRIA
+================================================== */
+.history {
+    background: var(--creme);
+}
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+.history-image {
+    height: 600px;
+    overflow: hidden;
+}
+.history-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.history-content h2 {
+    max-width: 500px;
+    margin-bottom: 30px;
+    font-family: Newsreader, Georgia, serif;
+    font-size: clamp(42px, 5vw, 64px);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+}
+.history-content h2 span {
+    color: var(--verde);
+}
+.history-content p {
+    max-width: 560px;
+    margin-bottom: 20px;
+    color: var(--texto-suave);
+    font-size: 16px;
+}
+/* ==================================================
+   IZABELLA
+================================================== */
+.izabella {
+    background: var(--panel);
+}
+.izabella-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+.izabella-content {
+    order: 1;
+}
+.izabella-image {
+    order: 2;
+    height: 650px;
+    overflow: hidden;
+}
+.izabella-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.izabella-content h2 {
+    margin-bottom: 28px;
+    font-family: Newsreader, Georgia, serif;
+    font-size: clamp(48px, 5vw, 70px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.025em;
+}
+.izabella-content h2 span {
+    color: var(--marrom);
+}
+.izabella-content p {
+    max-width: 520px;
+    margin-bottom: 20px;
+    color: var(--texto-suave);
+    font-size: 16px;
+}
+/* ==================================================
+   MISSÃO / VISÃO / VALORES
+================================================== */
+.values {
+    background: var(--creme);
+}
+.values-header {
+    width: min(100%, 760px);
+    margin: 0 auto 70px;
+    text-align: center;
+}
+.values-header h2 {
+    margin-bottom: 24px;
+    font-family: Newsreader, Georgia, serif;
+    font-size: clamp(44px, 5vw, 65px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.025em;
+}
+.values-header h2 span {
+    color: var(--verde);
+}
+.values-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--texto-suave);
+}
+.values-grid {
+    width: min(100%, var(--max-width));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--borda);
+    border-bottom: 1px solid var(--borda);
+}
+.value-card {
+    min-height: 320px;
+    padding: 45px 40px;
+    border-right: 1px solid var(--borda);
+}
+.value-card:last-child {
+    border-right: none;
+}
+.value-number {
+    margin-bottom: 45px;
+    color: var(--marrom);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+.value-card h3 {
+    margin-bottom: 15px;
+    font-family: Newsreader, Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+.value-card p {
+    color: var(--texto-suave);
+    font-size: 15px;
+}
+/* ==================================================
+   CTA
+================================================== */
+.about-cta {
+    padding: 78px 24px;
+    background: var(--accent);
+    text-align: center;
+}
+.about-cta-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+.about-cta .section-label {
+    color: #b7c7b8;
+}
+.about-cta h2 {
+    margin-bottom: 25px;
+    color: var(--branco);
+    font-family: Newsreader, Georgia, serif;
+    font-size: clamp(45px, 6vw, 75px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.025em;
+}
+.about-cta h2 span {
+    color: var(--verde-suave);
+}
+.about-cta p {
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.72);
+}
+.button-light {
+    background: var(--marrom);
+}
+.button-light:hover {
+    background: var(--marrom-claro);
+}
+
+/* ---------- Responsivo ---------- */
+
+@media (max-width: 900px) {
+    .history-container,
+    .izabella-container { grid-template-columns: 1fr; gap: 45px; }
+    .history-image { height: 500px; }
+    .izabella-image { order: 1; height: 500px; }
+    .izabella-content { order: 2; }
+    .values-grid { grid-template-columns: 1fr; }
+    .value-card { border-right: none; border-bottom: 1px solid var(--borda); }
+    .value-card:last-child { border-bottom: none; }
+}
+
+@media (max-width: 600px) {
+    .history-image,
+    .izabella-image { height: 420px; }
+    .value-card { min-height: auto; padding: 35px 25px; }
+    .about-cta { padding: 80px 20px; }
+}
+
+
+/* ==================================================
+   EQUIPE
+================================================== */
+.equipe { background: var(--panel); }
+
+.equipe-header {
+    width: min(100%, 760px);
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.equipe-header h2 {
+    margin-bottom: 24px;
+    font-family: Newsreader, Georgia, serif;
+    font-size: clamp(44px, 5vw, 65px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.025em;
+}
+
+.equipe-header h2 span { color: var(--marrom); }
+
+.equipe-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--texto-suave);
+}
+
+.equipe-grid {
+    width: min(100%, var(--max-width));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.membro-foto {
+    height: 400px;
+    margin-bottom: 22px;
+    overflow: hidden;
+    background: var(--borda);
+}
+
+.membro-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.membro-foto-vazia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde-suave);
+    font-size: 72px;
+}
+
+.membro-funcao {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--marrom);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.membro h3 {
+    margin-bottom: 10px;
+    font-family: Newsreader, Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.membro p {
+    color: var(--texto-suave);
+    font-size: 15px;
+}
+
+@media (max-width: 900px) {
+    .equipe-grid { grid-template-columns: 1fr; gap: 45px; }
+    .membro-foto { height: 420px; }
+}
