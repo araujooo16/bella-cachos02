@@ -2069,10 +2069,9 @@ summary:focus-visible {
 
 @media (max-width: 900px) {
     .corte-section { padding: 80px 20px; }
-    .corte-inner { grid-template-columns: 1fr; gap: 45px; }
-    .corte-foto { height: 440px; order: -1; }
+    .corte-inner { grid-template-columns: 1fr; gap: 40px; }
+    .corte-foto { height: 400px; }
 }
-
 
 /* ---------- Cursos em destaque (home) ---------- */
 
@@ -2170,6 +2169,6 @@ summary:focus-visible {
 
 @media (max-width: 900px) {
     .curso-destaque { grid-template-columns: 1fr; }
-    .curso-destaque-foto { order: -1; height: 300px; }
+    .curso-destaque-foto { height: 300px; }
     .curso-destaque-texto { padding: 36px 26px; }
 }
